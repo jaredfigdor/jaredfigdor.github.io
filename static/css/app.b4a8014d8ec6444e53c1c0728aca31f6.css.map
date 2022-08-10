@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.b4a8014d8ec6444e53c1c0728aca31f6.css"],"names":[],"mappings":"AACA,OACG,iBAAkB,CAClB,mBAAoB,CACpB,WACH","file":"app.b4a8014d8ec6444e53c1c0728aca31f6.css","sourcesContent":["\n.title{\r\n   text-align: center;\r\n   padding-right: 250px;\r\n   margin: auto;\n}\r\n\r\n"]}
