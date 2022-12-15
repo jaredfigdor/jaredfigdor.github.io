@@ -1,0 +1,839 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* @import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One); */
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/*
+ * Header
+ */
+
+
+a:hover {
+  text-decoration: underline;
+  color: #a9b119;
+}
+
+/*
+ * Airlines
+ */
+#plane {
+  width: 100%;
+  position: relative;
+  border-bottom: 10px solid rgb(180, 75, 119);
+  border-top: 20px dashed #66d4ff;
+  background-color: rgb(0, 175, 225);
+  background-image: url('../img/plane.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+#plane .content {
+  width: 100%;
+  float: left;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#plane .content,
+footer .content {
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 80px;
+}
+
+.badge {
+  color: white;
+  vertical-align: middle;
+  font-size: 30px;
+  background-color: rgb(0, 175, 225);
+}
+
+#planeMachine {
+  height: 67px;
+  display: inline-block;
+  text-align: left;
+}
+
+/*
+ * SlotMachine
+ */
+
+ html, body {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  overflow: auto;
+ }
+
+
+#randomize {
+  background-color: #a86de0;
+  height: 100%;
+  width: 100%;
+}
+
+button.filter {
+  background-color: #9753d7;
+  height: 4%;
+  width: 20%;
+  color: white;
+  border: white 1px solid;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  position: fixed;
+  top: 60px;
+  left: 20px;
+}
+
+h1 {
+  font-family: omnium-tagline, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+button.filter img {
+ color:white;
+ margin-right: 10px;
+ margin-bottom: 2px;
+}
+
+
+
+#randomize .randomize__item {
+  padding: 25px;
+  padding-left: 20px;
+  padding: auto;
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.gameWindow {
+  padding-top: 40px;
+  border:#9753d7 10px solid;
+  border-radius: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.closetWindow {
+  height: 75vh;
+  border:#9753d7 10px solid;
+  border-radius: 20px;
+  background-color: rgb(250, 250, 250);
+}
+
+.addClothes {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top: 33vh;
+  left: 35vw;
+  z-index: +2;
+  border-radius: 70%;
+  font-size: 30px;
+}
+
+#randomize .randomize__item #machine0 {
+margin: auto;
+}
+
+#randomize .randomize__item #machine1 {
+  margin: auto;
+  }
+
+  #randomize .randomize__item #machine2 {
+    margin: auto;
+    }
+
+#randomize .row > div.col-xs-4 > div {
+  padding-top: 40px;
+  padding-left: 40px;
+  width: 175px;
+  height: 175px;
+  background-color: #fff;
+  border-radius: 10%;
+  margin: auto;
+}
+
+.randomizeMachine {
+  width: 100px;
+  height: 100px;
+  transform: rotate(90deg);
+}
+
+.randomizeMachine div {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+}
+
+#randomize .btn-group {
+  margin-top: 30px;
+  width: auto;
+  margin-bottom: 15px;
+  
+}
+
+ul.slide {
+  height: 0px;
+}
+
+.machineResult {
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  height: 50px !important;
+  background: transparent !important;
+  font-size: 18px;
+  padding: 10px !important;
+}
+
+ul, li {
+  
+  list-style: none;  
+}  
+
+h2 {
+  font-size:2em;
+  margin: 0 0 0.5em;
+}
+
+.col-1-2 {
+  float: left; 
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+ul.iossearchfacets li {
+  
+  font-weight: normal;  
+}
+
+ul.iossearchfacets li.has-selected {
+  
+  font-weight: bold;
+}
+
+ul.iossearchfacets ul {
+  
+  display: none;
+}
+
+ul.iossearchfacets .open > ul {
+  
+  display: block;
+}
+
+ul.iossearchfacets li.has-children .facetselector {
+
+  cursor: pointer;
+}
+
+ul.iossearchfacets li.has-children > .facetselector:after {
+  
+  content: "+";
+  margin: 0 0 0 5px;
+}
+
+ul.iossearchfacets li.has-children.open > .facetselector:after {
+  
+  content: "-";
+}
+
+.removeable-facet {
+  
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: #444444;
+  color: #FFFFFF;
+  border-radius: 10px;
+  display:inline-block;
+}
+
+.removeable-facet:after {
+  
+  padding: 0 0 0 5px;
+  content: "x"
+}
+
+.removeable-facet:hover {
+  
+  background-color: #666666;
+}
+
+
+@media screen and (min-width: 600px) {
+ 
+  .col-1-2 {
+    width: 50%;
+    padding: 0 20px 0 0;
+  }
+}
+
+/*
+ * Watch
+ */
+#watch {
+  border-top: 20px dashed rgb(72, 158, 48);
+  border-bottom: 10px solid #195ac8;
+  background-color: #46d265;
+}
+
+#watch h1 {
+  margin: 0px;
+}
+
+#watch .small {
+  text-align: center;
+  background: url('../img/watch.png') no-repeat 50% 50%;
+  height: 300px;
+  width: 250px;
+}
+
+#watchContainer {
+  margin-left: calc(50% - 42px);
+  transform: translateY(115px);
+  width: 80px;
+  height: 80px;
+}
+
+#watchContainer .slot-machine__container > div {
+  color: #fff;
+  height: 80px;
+  width: 80px;
+  font-size: 64px;
+}
+
+#watch .btn-group .btn {
+  border: none;
+  background-color: rgb(72, 158, 48);
+}
+
+#watch .btn-group .btn:hover,
+.btn-group .btn:focus {
+  background-color: rgb(72, 158, 48);
+}
+
+/*
+ * Triky
+ */
+#triky {
+  background: url(./img/triky.jpg) no-repeat right 130px;
+  background-color: #0f99ca;
+  border-bottom: 10px solid #b8312f;
+  border-top: 20px dashed #195ac8;
+  background-position-x: calc(100% + 40px);
+}
+
+#triky1 {
+  background-color: #fff;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  padding-top: 4px;
+}
+
+#triky .btn-group {
+  padding-top: 15px;
+}
+
+/*
+ * Casino
+ */
+#casino {
+  border-bottom: 10px solid rgb(72, 158, 48);
+  border-top: 20px dashed rgb(180, 75, 119);
+  background-color: rgb(240, 150, 150);
+}
+
+#casino .content:nth-child(1) {
+  text-align: center;
+  background: url('../img/machine.png') no-repeat 50% 80px;
+  background-position-x: calc(50% + 30px);
+  min-height: 580px;
+}
+
+#casino .content > div {
+  padding-top: 165px;
+  width: 300px;
+  margin: 0 auto;
+  transform: translateX(30px);
+}
+
+.machineContainer {
+  padding: 5px 1px 5px 1px;
+  height: 135px;
+}
+
+.slotMachine {
+  width: 36.333333%;
+  border: 5px solid #cf5178;
+  height: 100px;
+  display: inline-block;
+}
+
+#casino .btn-group {
+  margin-top: 150px;
+  transform: translateX(-25px);
+}
+
+#casino .btn-group .btn {
+  border: none;
+  background-color: rgb(209, 79, 119);
+}
+
+#casino .btn-group .btn:hover,
+.btn-group .btn:focus {
+  background-color: rgb(180, 75, 119);
+}
+
+.slotMachine .slot {
+  height: 100px;
+  background-position-x: 55%;
+  background-repeat: no-repeat;
+}
+
+.slot1 {
+  background-image: url('./img/slot1.png');
+}
+
+.slot2 {
+  background-image: url('./img/slot2.png');
+}
+
+.slot3 {
+  background-image: url('./img/slot3.png');
+}
+
+.slot4 {
+  background-image: url('./img/slot4.png');
+}
+
+.slot5 {
+  background-image: url('./img/slot5.png');
+}
+
+.slot6 {
+  background-image: url('./img/slot6.png');
+}
+
+/*
+ * Footer
+ */
+
+#textMachine {
+  width: 520px;
+  height: 67px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+body {background-color : #ededed; font-family : "Open Sans", sans-serif;}
+
+h1 {padding: 40px; text-align: center; font-size: 2em;}
+
+li a {text-decoration : none; color : #2d2f31;}
+
+
+.row label span {
+  margin-left: 25px;
+  padding : 30px;
+  border : #2d2f31 2px solid; 
+  color : black;
+  border-radius: 5px;
+  font-size : 1.4em;
+  width: 90vw;
+  height: 20px;
+  font-family: omnium-tagline, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  cursor : pointer;
+  display: block;
+  text-align: left;
+}
+
+.row label span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slidetwo {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slidethree {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+#randomize > div.gameWindow > div  > label > span {
+  height: 10px;
+}
+
+.slide li {padding : 10px;
+
+  text-align: left;
+
+}
+
+.slidetwo li {padding : 10px;
+
+  text-align: left;
+
+}
+
+.slidethree li {padding : 10px;
+
+  text-align: left;
+
+}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 200px;} 
+
+#touchtwo {position: absolute; opacity: 0; height: 0px;}    
+
+#touchtwo:checked + .slidetwo {height: 200px;} 
+
+#touchthree {position: absolute; opacity: 0; height: 0px;}    
+
+#touchthree:checked + .slidethree {height: 200px;} 
+
+.parent {
+  position: absolute;
+  z-index: +2;
+  bottom: 0px;
+  left: 0px;
+}
+
+.parentone button {
+  position: fixed;
+  background-color: #9753d7;
+  color: white;
+  border: 2px white solid;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 4px 8px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.parenttwo button {
+  background-color: #9753d7;
+  color: white;
+  border: white 2px solid;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 0px 10px #ce6441;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+#show1 {
+  display: none;
+}
+
+.parentthree button {
+  background-color: grey;
+  color: white;
+  border: white 2px solid;
+  padding: 5px;
+  font-size: 31px;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+}
+
+.parent button:active {
+  background-color: #9753d7;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.parenttwo button.round5 {
+  background-color: red;
+  border: none;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parentwo button.round5:active {
+  background-color: red;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.parentone button:not(:first-child) {
+  margin-top: 10px;
+}
+
+.round-1 {
+  border-radius: 5%;
+}
+
+.round-2 {
+  border-radius: 10%;
+}
+
+.round-3 {
+  border-radius: 20%;
+}
+
+.round-4 {
+  border-radius: 30%;
+}
+
+.round-5 {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  left: 40px;
+}
+
+.round-6 {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 70%;
+}
+
+.round-7 {
+  position: fixed;
+  bottom: 130px;
+  right: 40px;
+  border-radius: 70%;
+}
+
+#randomize > div.gameWindow > div > div > img {
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.myGallery .item {
+  position: relative;
+}
+
+
+.myGallery .item img {
+  vertical-align: middle;
+}
+
+.myGallery .caption {
+  margin: 0;
+  padding: 1em;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  transition: transform .5s;
+  transform: translateY(100%);
+  background: rgba(0, 0, 0, .7);
+  color: rgb(255, 255, 255);
+}
+
+.myGallery .item:hover .caption {
+  transform: translateY(0%);
+}
+
+
+
+.filterButton {
+  height: 30px;
+  width: 80px;
+  border: solid white 2px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+  color: white;
+  background-color: #9753d7;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Open Sans";
+  background: #2c3e50;
+  color: #ecf0f1;
+  line-height: 1.618em;
+}
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabs {
+  position: relative;
+  background: none;
+  height: 14.75rem;
+  width: 96vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+}
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+.tabs::after {
+  clear: both;
+}
+.tab {
+  float: left;
+  z-index: -1;
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  width: 29vw;
+  z-index: +2;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 6vw;
+  background: none;
+  border: #9753d7 1px solid;
+  border-radius: 2px;
+  color: black;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+  padding-top: 3px;
+}
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+.tab-content {
+  height: 60vh;
+  width: 90vw;
+  position: absolute;
+  margin-left: 10px;
+  z-index: 1;
+  top: 2.75em;
+  left: 0;
+  padding-top:0.5rem;
+  background: rgb(250, 250, 250);
+  overflow: hidden;
+  color: #2c3e50;
+  opacity: 0;
+  transition: all 0.35s;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  border-right: 0.125rem solid #fff;
+  transition: all 0.35s;
+  z-index: 1;
+  top: -0.0625rem;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+#randomize > div.closetWindow > div > div:nth-child(1) > div > div > div > img {
+  padding: 5px;
+}
+
+#randomize > div.closetWindow > div > div:nth-child(2) > div > div > div > img {
+  padding: 5px;
+}
+
+#randomize > div.closetWindow > div > div:nth-child(3) > div > div > div > img {
+  padding: 5px;
+}

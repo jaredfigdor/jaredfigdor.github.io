@@ -1,0 +1,263 @@
+body {
+    background-color: #A86DE0;
+  }
+
+  img.gif {
+padding-top: 300px;
+  }
+
+  .wrapper {
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+  }
+
+  h1 {
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+    padding-top: 10px;
+  }
+
+  .go {
+    background-color: #9753D7;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26px;
+    border-radius: 20px;
+    cursor:pointer;
+    box-shadow: black 2px 5px 4px;
+  }
+
+  
+
+  
+  #splash {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#9753D7;
+
+}
+
+.loadgif {
+  padding-top: 75%;
+  padding-left: 30%;
+}
+
+
+  .border {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    outline: 8px solid;
+    outline-color: #9753D7;
+    height: 400px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px black inset;
+    text-align: center;
+    padding-top: 40px;
+
+  }
+  .welcome {
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #A86DE0;
+    font-size: 50px;
+  }
+
+  .start {
+    font-family: omnium-tagline, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #A86DE0;
+    font-size: 27px;
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 50px;
+  }
+
+  .closet {
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: 2px solid;
+    border-color: white;
+    margin-left: 40px;
+    background-color: #FF0200;
+
+  }
+  .buttons {
+    height: 360px;
+    position: relative;
+  }
+
+  .closet {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    }
+
+    .game {
+        border-radius: 50%;
+        background-color: #9753D7;
+        border: 2px solid;
+        border-color: white;
+        height: 65px;
+        width: 65px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .pushable {
+position: absolute;
+bottom: 20px;
+left: 40px;
+background: hsl(340deg 100% 32%);
+border-radius: 50%;
+border: none;
+padding: 0;
+cursor: pointer;
+outline-offset: 4px;
+}
+.front {
+display: block;
+padding: 10px 10px;
+padding-bottom: 0px;
+padding-top: 0px;
+border-radius: 50%;
+font-size: 1.25rem;
+background: hsl(345deg 100% 47%);
+color: white;
+transform: translateY(-6px);
+}
+
+.pushable:active .front {
+transform: translateY(-2px);
+}
+
+    .pushables {
+position: absolute;
+bottom: 20px;
+right: 40px;
+background: hsl(266deg 62% 50%);
+border-radius: 50%;
+border: none;
+padding: 0;
+cursor: pointer;
+outline-offset: 4px;
+}
+.back {
+display: block;
+padding: 10px 10px;
+padding-bottom: 0px;
+padding-top: 0px;
+border-radius: 50%;
+font-size: 1.25rem;
+background: hsl(271deg 62% 58%);
+color: white;
+transform: translateY(-6px);
+}
+
+.pushables:active .back {
+transform: translateY(-2px);
+}
+
+.dice {
+    padding-top: 4px;
+}
+
+.inlineButton {
+  display: inline;
+  vertical-align: middle;
+}
+
+.parent button {
+  background-color: #9753d7;
+  color: white;
+  border: 2px white solid;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parenttwo button {
+  background-color: #9753d7;
+  color: white;
+  border: 2px white solid;
+  padding: 5px;
+  font-size: 31px;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 2px 4px darkslategray;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.parent button:active {
+  background-color: #9753d7;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+
+.parentwo button.round5:active {
+  background-color: red;
+  box-shadow: 0 0 2px darkslategray;
+  transform: translateY(2px);
+}
+
+.parent button:not(:first-child) {
+  margin-top: 10px;
+}
+
+.round-1 {
+  border-radius: 5%;
+}
+
+.round-2 {
+  border-radius: 10%;
+}
+
+.round-3 {
+  border-radius: 20%;
+}
+
+.round-4 {
+  border-radius: 30%;
+}
+
+.round-5 {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+
+.round-6 {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 70%;
+}
